@@ -25,10 +25,10 @@ const Header = () => {
 
   return (
     <header className="relative z-50 w-full">
-      <div className="backdrop-blur-md bg-gradient-to-br from-[#0f111f] to-[#141827] border-b border-white/10 shadow-lg fixed top-0 left-0 w-full px-6 md:px-20 py-4 flex justify-between items-center text-white font-sans">
+      <div className="backdrop-blur-md bg-transparent border-white/10 shadow-lg fixed rounded-full sm:rounded-none m:rounded-none mx-auto top-4 left-0 w-full px-6 md:px-20 py-4 flex justify-between items-center text-white font-sans">
         <div className="text-xl font-bold tracking-wide neon-text">RentDirect</div>
 
-        <nav className="hidden md:flex gap-10 text-sm md:text-base">
+        <nav className="hidden md:flex gap-10 text-sm md:text-base bg-transparent border-gray/100 border-[1px] px-6 py-2 rounded-full text-black">
           {['Home', 'About', 'Properties', 'Contact'].map((item) => (
             <a
               key={item}
